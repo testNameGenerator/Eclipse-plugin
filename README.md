@@ -11,4 +11,4 @@ Limitations
 ----
 The plugin only generates PHPUnit syntax for now.
 
-Also, check out (the Sublime Text version)[https://github.com/bogdananton/Sublime-testNameGenerator] for more information about the **testNameGenerator** project.
+Also, check out [the Sublime Text version](https://github.com/bogdananton/Sublime-testNameGenerator) for more information about the **testNameGenerator** project.
