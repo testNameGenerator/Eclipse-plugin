@@ -62,7 +62,7 @@ public class Convertor extends AbstractHandler {
 	    	            
 	    	            // replace
 	    	            String commentText = "\t/**\n\t * " + originalText.replace("*/", "* /") + "\n\t */\n\t";
-	    	            String methodNameText = originalText.replaceAll("/[^A-Za-z0-9 _]/", "");
+	    	            String methodNameText = originalText.replaceAll("\\P{Alnum}", " ");
 	    	            methodNameText = toCamelCase(methodNameText).replace(" ", "");
 	    	            
 	    	            String methodText = "public function test" + methodNameText + "() " + 
