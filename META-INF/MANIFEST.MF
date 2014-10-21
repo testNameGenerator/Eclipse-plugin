@@ -11,3 +11,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.jface.text,
  org.eclipse.ui.texteditor
+Bundle-ClassPath: external/jaxws-rt-2.0.jar,
+ .
