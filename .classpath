@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.text-3.5.100.v20110505-0800.jar.zip"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.jface-3.8.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.jface.text_3.9.0.v20140521-1657.jar"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.ui.workbench_3.106.0.v20140530-0732.jar"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.ui.workbench.texteditor_3.9.0.v20140411-1521.jar"/>
+	<classpathentry exported="true" kind="lib" path="external/org.eclipse.ui.editors_3.8.200.v20140401-1310.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
