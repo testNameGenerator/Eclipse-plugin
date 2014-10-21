@@ -38,7 +38,10 @@ public class Convertor extends AbstractHandler {
 	private void generateTestMethod(String preparedText, int lineNumber, IDocument doc)
 	{
 		ITextEditor editor = this.getEditor();
-		if (editor == null) {
+		if (editor == null
+				|| !editor.isEditable()
+				|| !this.getPage().getActivePartReference().getId().toString()
+						.toLowerCase().contains(".php.editor")) {
 			return;
 		}
 		try {
