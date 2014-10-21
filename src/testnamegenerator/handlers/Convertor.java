@@ -14,7 +14,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.texteditor.ITextEditor;
 
-import com.sun.xml.internal.ws.util.StringUtils;
+import com.sun.xml.ws.util.StringUtils;
 
 public class Convertor extends AbstractHandler {
 	
