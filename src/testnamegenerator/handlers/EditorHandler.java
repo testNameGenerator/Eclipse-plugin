@@ -5,6 +5,7 @@ import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.ITextSelection;
+import org.eclipse.jface.text.TextSelection;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
@@ -17,7 +18,30 @@ public class EditorHandler {
 	{
 		StringHandler.editor = editor;
 	}
-
+	
+	public static Boolean isValidEditor(String languageSyntax) {
+	    Boolean isValid;
+	    ITextEditor editor = getEditor();
+	    if (editor == null
+		    || !editor.isEditable()
+		    || !getPage().getActivePartReference().getId().toString().toLowerCase()
+			    .contains(languageSyntax.trim().toString().toLowerCase() + ".editor")) {
+	    	isValid = false;
+	    } else {
+	    	isValid = true;
+	    }
+	    return isValid;
+ 	}
+	
+	public static IDocument insertMethod(TextSelection selection, String text, IDocument document) {
+	    try {
+	    	document.replace(selection.getOffset(), selection.getLength(), text);
+	    } catch (BadLocationException e) {
+	    	e.printStackTrace();
+	    }
+	    return document;
+	}
+	
 	public static void focusCursor(int lineNumber, IDocument doc, Boolean trimFirstTwoTabs) {
 		if (StringHandler.editor != null) {
 			IRegion lineInfo;

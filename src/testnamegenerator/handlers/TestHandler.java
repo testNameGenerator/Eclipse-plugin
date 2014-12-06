@@ -69,6 +69,9 @@ public class TestHandler {
 	public static void generateTestMethod(String preparedText, int lineNumber, IDocument doc)
 	{
 		ITextEditor editor = EditorHandler.getEditor();
+		if (!EditorHandler.isValidEditor("php")) {
+			return;
+	    }
 		if (editor == null
 				|| !editor.isEditable()
 				|| !EditorHandler.getPage().getActivePartReference().getId().toString()
@@ -81,8 +84,7 @@ public class TestHandler {
 			ISelection sel   = editor.getSelectionProvider().getSelection();
 	
 			if (sel instanceof TextSelection) {
-				final TextSelection textSel = (TextSelection)sel;
-				doc.replace(textSel.getOffset(), textSel.getLength(), preparedText);
+				EditorHandler.insertMethod((TextSelection) sel, preparedText, doc);
 			}
 		} catch(Exception e) {}
 	}
