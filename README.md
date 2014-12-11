@@ -1,6 +1,6 @@
 Eclipse Plugin that converts a phrase intro a PHPUnit test method.<br/>
 
-The update site for the plugin can be accessed via the following url: http://bogdananton.github.io/Eclipse-testNameGenerator/
+The update site for the plugin can be accessed via the following url: http://sorinstanila.github.io/Eclipse-testNameGenerator/
 
 The url is visible only from Eclipse. Please add the url from: Help > Install New Software ... > Add
 
