@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name.0
 Bundle-SymbolicName: testNameGenerator;singleton:=true
-Bundle-Version: 1.0.4
+Bundle-Version: 1.0.4.qualifier
 Bundle-Activator: testnamegenerator.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
