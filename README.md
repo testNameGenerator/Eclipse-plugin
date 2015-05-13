@@ -1,6 +1,6 @@
 Eclipse Plugin that converts a phrase intro a PHPUnit test method.<br/>
 
-The update site for the plugin can be accessed via the following url: http://sorinstanila.github.io/Eclipse-testNameGenerator/
+The update site for the plugin can be accessed via the following url: http://testNameGenerator.github.io/Eclipse-plugin/
 
 The url is visible only from Eclipse. Please add the url from: Help > Install New Software ... > Add
 
@@ -15,7 +15,7 @@ Limitations
 ----
 The plugin only generates PHPUnit syntax for now.
 
-Also, check out [the Sublime Text version](https://github.com/bogdananton/Sublime-testNameGenerator) and [PhpStorm](https://github.com/bogdananton/PhpStorm-testNameGenerator) for more information about the **testNameGenerator** project.
+Also, check out [the Sublime Text version](https://github.com/testNameGenerator/SublimeText-plugin) and [PhpStorm](https://github.com/testNameGenerator/PHPStorm-plugin) for more information about the **testNameGenerator** project.
 
 
 
