@@ -3,6 +3,9 @@ Eclipse Plugin that converts a phrase intro a PHPUnit test method.<br/>
 The update site for the plugin can be accessed via the following url: http://testNameGenerator.github.io/Eclipse-plugin/
 
 The url is visible only from Eclipse. Please add the url from: Help > Install New Software ... > Add
+or drag the install button to your running Eclipse workspace 
+
+<a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2386132" class="drag" title="Drag to your running Eclipse workspace to install TestNameGenerator(PHP)"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png" alt="Drag to your running Eclipse workspace to install TestNameGenerator(PHP)" /></a>
 
 Usage
 ----
